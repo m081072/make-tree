@@ -28,7 +28,10 @@ describe("make tree", function(){
                         {"command":"set","name":"someProperty","value":"someValue"},
                     {"command":"end","value":"nestedNodeName"},
                 {"command":"end","value":"nodeName"}]);
-            expect(results).to.deep.equal({"nodeName":{"nestedNodeName":{"someProperty":"someValue"}}});
+            expect(results).to.deep.equal({
+                "nodeName":{
+                    "nestedNodeName":{
+                        "someProperty":"someValue"}}});
         });
         it("should return two nested nodes with a value and another nested node", function(){
             var results = mt.make([
@@ -39,7 +42,11 @@ describe("make tree", function(){
                         {"command":"end","value":"n3"},
                     {"command":"end","value":"nestedNodeName"},
                 {"command":"end","value":"nodeName"}]);
-            expect(results).to.deep.equal({"nodeName":{"nestedNodeName":{"someProperty":"someValue", "n3":{}}}});
+            expect(results).to.deep.equal({
+                "nodeName":{
+                    "nestedNodeName":{
+                        "someProperty":"someValue",
+                        "n3":{}}}});
         });
         it("should return peer nodes", function(){
             var results = mt.make([
@@ -48,7 +55,9 @@ describe("make tree", function(){
                 {"command":"begin","value":"n2"},
                 {"command":"end","value":"n2"}]
             );
-            expect(results).to.deep.equal({"n1":{}, "n2":{}});
+            expect(results).to.deep.equal({
+                "n1":{},
+                "n2":{}});
         });
     });
 });
