@@ -1,3 +1,4 @@
+```javascript
 describe("make tree", function(){
     describe("#make()", function(){
         it("should return empty tree for empty list", function(){
@@ -18,3 +19,4 @@ describe("make tree", function(){
         });
     });
 });
+```
