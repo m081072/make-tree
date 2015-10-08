@@ -59,5 +59,20 @@ describe("make tree", function(){
                 "n1":{},
                 "n2":{}});
         });
+        it("should return nested and peer nodes", function(){
+            var results = mt.make([
+                {"command":"begin","value":"n1"},
+                    {"command":"begin","value":"n2"},
+                    {"command":"end","value":"n2"},
+                {"command":"end","value":"n1"},
+                {"command":"begin","value":"n3"},
+                {"command":"end","value":"n3"}
+                ]
+            );
+            expect(results).to.deep.equal({
+                "n1":{
+                    "n2":{}},
+                "n3":{}});
+        });
     });
 });

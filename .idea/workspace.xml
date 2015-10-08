@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944169d1-3772-49cf-8219-5c688d660e91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/makeTree.js" afterPath="$PROJECT_DIR$/lib/makeTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/makeTreeSpec.js" afterPath="$PROJECT_DIR$/test/makeTreeSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="make-tree.iws" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="makeTreeSpec.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="makeTreeSpec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/makeTreeSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="113" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
+            <state vertical-scroll-proportion="0.59107804">
+              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeTree.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="makeTree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/makeTree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14869888">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
@@ -84,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test/makeTreeSpec.js" />
         <option value="$PROJECT_DIR$/lib/makeTree.js" />
+        <option value="$PROJECT_DIR$/test/makeTreeSpec.js" />
       </list>
     </option>
   </component>
@@ -409,7 +409,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33012047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -440,7 +440,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="further tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="further tests" />
+    <MESSAGE value="remove console.log" />
+    <MESSAGE value="nicer formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="nicer formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -523,18 +525,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/makeTreeSpec.js">
+    <entry file="file://$PROJECT_DIR$/lib/makeTree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="113" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/makeTree.js">
+    <entry file="file://$PROJECT_DIR$/test/makeTreeSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14869888">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.59107804">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
           <folding />
         </state>
       </provider>
