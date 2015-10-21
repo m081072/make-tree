@@ -1,28 +1,30 @@
-var expect = require("chai").expect;
-var mt = require("../lib/makeTree.js");
+"use strict";
+const expect = require("chai").expect;
+const mt = require("../lib/makeTree.js");
 
-describe("make tree", function(){
-    describe("#make()", function(){
-        it("should return empty tree for empty list", function(){
-            var results = mt.make([]);
+
+describe("make tree", () => {
+    describe("#make()", () => {
+        it("should return empty tree for empty list", () => {
+            let results = mt.make([]);
             expect(results).to.deep.equal({});
         });
-        it("should return single new node for single begin/end pair", function(){
-            var results = mt.make([
+        it("should return single new node for single begin/end pair", () => {
+            let results = mt.make([
                 {"command":"begin","value":"nodeName"},
                 {"command":"end","value":"nodeName"}]);
             expect(results).to.deep.equal({"nodeName":{}});
         });
-        it("should return two nested nodes for nested begin/end pair", function(){
-            var results = mt.make([
+        it("should return two nested nodes for nested begin/end pair", () => {
+            let results = mt.make([
                 {"command":"begin","value":"nodeName"},
                     {"command":"begin","value":"nestedNodeName"},
                     {"command":"end","value":"nestedNodeName"},
                 {"command":"end","value":"nodeName"}]);
             expect(results).to.deep.equal({"nodeName":{"nestedNodeName":{}}});
         });
-        it("should return two nested nodes with a value for nested begin/end pair and a value setter", function(){
-            var results = mt.make([
+        it("should return two nested nodes with a value for nested begin/end pair and a value setter", () => {
+            let results = mt.make([
                 {"command":"begin","value":"nodeName"},
                     {"command":"begin","value":"nestedNodeName"},
                         {"command":"set","name":"someProperty","value":"someValue"},
@@ -33,8 +35,8 @@ describe("make tree", function(){
                     "nestedNodeName":{
                         "someProperty":"someValue"}}});
         });
-        it("should return two nested nodes with a value and another nested node", function(){
-            var results = mt.make([
+        it("should return two nested nodes with a value and another nested node", () => {
+            let results = mt.make([
                 {"command":"begin","value":"nodeName"},
                     {"command":"begin","value":"nestedNodeName"},
                     {"command":"set","name":"someProperty","value":"someValue"},
@@ -48,8 +50,8 @@ describe("make tree", function(){
                         "someProperty":"someValue",
                         "n3":{}}}});
         });
-        it("should return peer nodes", function(){
-            var results = mt.make([
+        it("should return peer nodes", () => {
+            let results = mt.make([
                 {"command":"begin","value":"n1"},
                 {"command":"end","value":"n1"},
                 {"command":"begin","value":"n2"},
@@ -59,8 +61,8 @@ describe("make tree", function(){
                 "n1":{},
                 "n2":{}});
         });
-        it("should return nested and peer nodes", function(){
-            var results = mt.make([
+        it("should return nested and peer nodes", () => {
+            let results = mt.make([
                 {"command":"begin","value":"n1"},
                     {"command":"begin","value":"n2"},
                     {"command":"end","value":"n2"},

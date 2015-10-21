@@ -6,11 +6,14 @@
   "scripts": {
     "autotest": "./node_modules/.bin/supervisor -q -n exit -x ./node_modules/.bin/mocha -- -b"
   },
-  "author": "",
+  "author": "Mike Hogan",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.3.0",
     "mocha": "^2.3.3",
     "supervisor": "^0.9.1"
+  },
+  "dependencies": {
+    "immutable": "^3.7.5"
   }
 }
